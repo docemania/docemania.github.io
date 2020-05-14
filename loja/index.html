@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-640x920.png">
+<title>Doce Mania - Bolo e Delícias</title>
+<link rel="stylesheet" href="css/framework7.css">
+<link rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+<link type="text/css" rel="stylesheet" href="css/animations.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900" rel="stylesheet"> 
+</head>
+<body id="mobile_wrap">
+
+    <div class="statusbar-overlay"></div>
+
+    <div class="panel-overlay"></div>
+
+
+    <div class="views">
+
+      <div class="view view-main">
+
+
+
+        <div class="pages">
+
+          <div data-page="index" class="page homepage">
+            <div class="page-content">
+			
+                        <div class="navbarpages">
+                            <div class="navbar_left">
+                                <div class="logo_image"><a href="index.html"><img src="images/logo.png"></a></div>
+                            </div>
+			   
+                        </div>
+
+                  <!-- Slider -->
+                 <div class="swiper-container slidertoolbar swiper-init" data-effect="slide" data-parallax="true" data-pagination=".swiper-pagination"  data-next-button=".swiper-button-next" data-prev-button=".swiper-button-prev">
+                    <div class="swiper-wrapper">
+                    
+                      <div class="swiper-slide" style="background-image:url(images/slide3.jpg);">
+		     <div class="slider_trans">
+			 <div class="slider-caption">
+			          <span class="subtitle" data-swiper-parallax="-60%">CREATIVE SOLUTION</span>
+				  <h2 data-swiper-parallax="-100%">FOR MOBILE PROJECTS</h2>
+				  
+				  <p data-swiper-parallax="-30%">Design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
+			 </div>
+		      </div> 
+                       </div>
+                      <div class="swiper-slide" style="background-image:url(images/slide2.jpg);">
+			<div class="slider_trans">		  
+				<div class="slider-caption">
+				<span class="subtitle" data-swiper-parallax="-60%">MULTIPURPOSE DESIGNS</span>
+				<h2 data-swiper-parallax="-100%">WITH BEAUTIFUL</h2>
+				
+				<p data-swiper-parallax="-30%">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
+				</div>	
+			</div>	
+                      </div>
+                      <div class="swiper-slide" style="background-image:url(images/slide1.jpg);">
+			<div class="slider_trans">		  
+				<div class="slider-caption">
+				<span class="subtitle" data-swiper-parallax="-60%">WEB AND NATIVE</span>
+				<h2 data-swiper-parallax="-100%">READY FOR APPS</h2>
+				
+				<p data-swiper-parallax="-30%">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
+				</div>
+                       </div>
+		   </div> 		   
+                    </div>
+                    <div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>	
+                  </div>
+			  
+		 <div class="swiper-container-toolbar swiper-toolbar swiper-init" data-effect="slide" data-slides-per-view="1" data-slides-per-group="1" data-space-between="0" data-pagination=".swiper-pagination-toolbar">
+			<div class="swiper-pagination-toolbar"></div>
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide toolbar-icon">
+				<a href="about.html" data-view=".view-main"><img src="images/icons/red/users.png" alt="" title="" /><span>SOBRE</span></a>
+        <a href="loja.html" data-view=".view-main"><img src="images/icons/red/shop.png" alt="" title="" /><span>LOJA</span></a>
+	   
+				<a href="#" data-popup=".popup-login" class="open-popup"><img src="images/icons/red/lock.png" alt="" title="" /><span>LOGIN</span></a>
+				 <a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/red/twitter.png" alt="" title="" /><span>SOCIAL</span></a>
+           <a href="tel:12345678" class="external"><img src="images/icons/red/phone.png" alt="" title="" /><span>CALL NOW!</span></a>
+				
+      </div> 		
+			</div>
+		  </div>		  
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+	
+    <!-- Login Popup -->
+    <div class="popup popup-login">
+        <div class="content-block">
+            <h4>LOGIN</h4>
+            <div class="loginform">
+                <form id="LoginForm" method="post">
+                    <input type="text" name="Username" value="" class="form_input required" placeholder="username" />
+                    <input type="password" name="Password" value="" class="form_input required" placeholder="password" />
+                    <div class="forgot_pass"><a href="#" data-popup=".popup-forgot" class="open-popup">Forgot Password?</a></div>
+                    <input type="submit" name="submit" class="form_submit" id="submit" value="SIGN IN" />
+                </form>
+                <div class="signup_bottom">
+                    <p>Don't have an account?</p>
+                    <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>
+                </div>
+            </div>
+            <div class="close_popup_button">
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
+        </div>
+    </div>
+
+    
+	
+    <!-- Social Icons Popup -->
+    <div class="popup popup-social">
+    <div class="content-block">
+      <h4>Social Share</h4>
+      <p>Share icons solution that allows you share and increase your social popularity.</p>
+      <ul class="social_share">
+      <li><a href="http://twitter.com/" class="external"><img src="images/icons/black/twitter.png" alt="" title="" /><span>TWITTER</span></a></li>
+      <li><a href="http://www.facebook.com/" class="external"><img src="images/icons/black/facebook.png" alt="" title="" /><span>FACEBOOK</span></a></li>
+      <li><a href="http://plus.google.com" class="external"><img src="images/icons/black/gplus.png" alt="" title="" /><span>GOOGLE</span></a></li>
+      <li><a href="http://www.dribbble.com/" class="external"><img src="images/icons/black/dribbble.png" alt="" title="" /><span>DRIBBBLE</span></a></li>
+      <li><a href="http://www.linkedin.com/" class="external"><img src="images/icons/black/linkedin.png" alt="" title="" /><span>LINKEDIN</span></a></li>
+      <li><a href="http://www.pinterest.com/" class="external"><img src="images/icons/black/pinterest.png" alt="" title="" /><span>PINTEREST</span></a></li>
+      </ul>
+      <div class="close_popup_button"><a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a></div>
+    </div>
+    </div>
+    
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/jquery.validate.min.js" ></script>
+<script src="js/framework7.js"></script>
+<script src="js/jquery.swipebox.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/email.js"></script>
+<script src="js/audio.min.js"></script>
+<script src="js/my-app.js"></script>
+  </body>
+</html>
