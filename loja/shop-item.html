@@ -1,3 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+
 <div class="pages">
   <div data-page="shopitem" class="page no-toolbar no-navbar">
     <div class="page-content">
@@ -29,29 +41,32 @@
          <h3>SELECIONE A QUANTIDADE</h3>
             <div class="item_qnty_shopitem">
                 <form id="myform" method="POST" action="#">
-                    <input type="button" value="-" class="qntyminusshop" field="quantity" />
-                    <input type="text" name="quantity" value="1" class="qntyshop" />
-                    <input type="button" value="+" class="qntyplusshop" field="quantity" />
+                    <input type="button"  onclick="Subtrair()"  value="-" class="qntyminusshop" field="quantity" />
+                    <input type="text" id ="quantity" name="quantity" value="1" class="qntyshop" />
+                    <input type="button" onclick="Somar()" value="+" class="qntyplusshop" field="quantity" />
                 </form>
             </div>
+
+
                <!--<div class="carttotal_full">
                           <div class="carttotal_row_full">
                           <div class="carttotal_left">TOTAL DO PEDIDO</div>  <div class="carttotal_right">$ 1,320.00</div>
                           </div>                  
                       </div>   -->
           <h3>SELECIONE O MÉTODO DE PAGAMENTO</h3>
-                <div class="size_selectors">                
-                    <input id="size_s" type="radio" name="size" value="s">  
-                    <label for="size_s">CARTÃO DÉBITO</label>
-                    <input id="size_m" type="radio" name="size" value="m" checked="checked">
-                    <label for="size_m">CARTÃO CRÉDITO</label> 
-                    <input id="size_l" type="radio" name="size" value="l">     
-                    <label for="size_l">EM DINHEIRO</label>
-                    <input id="size_xl" type="radio" name="size" value="xl">                      
-                </div> 
+          <div class="selector_overlay">
+            <select id="select_pag" name="selectoptions" class="required">
+              <option value="" disabled selected>Método de pagamento</option>
+              <option onclick="getMetodoPagamento()" value="1">Dinheiro</option>
+              <option onclick="getMetodoPagamento()" value="2">Cartão de Débito</option>
+              <option onclick="getMetodoPagamento()" value="3">Cartão de Crédito</option>       
+            </select>
+          </div>
        
 
-          <a href="" class="button_full btyellow">FINALIZAR COM WHATSAPP</a>
+          <a href="javascript:void(0)" onclick="linkWhats()" class="button_full btyellow">FINALIZAR COM WHATSAPP</a>
+         
+          
           
           </div>
 
@@ -66,5 +81,6 @@
       
       
     </div>
+
   </div>
 </div>
