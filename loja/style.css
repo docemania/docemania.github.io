@@ -1475,7 +1475,7 @@ border:1px #ebebeb solid;
 color:#375a70;
 }
 .size_selectors input[type=radio]:checked + label {
-background-color:#0be0af;
+background-color:whitesmoke;
 }
 .color_selectors{
 width:100%;
