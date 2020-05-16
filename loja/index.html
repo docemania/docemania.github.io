@@ -222,6 +222,7 @@
               }
               
               function linkWhats(){
+               metodoPagamento = $("#select_pag option:selected").text();    
               window.location.href = "whatsapp://send/?phone=+5583999485703&text=Olá, gostaria de pedir " + quantidade+" brownie "+"no "+metodoPagamento;
               }
 
