@@ -217,7 +217,7 @@
               }
 
               function getMetodoPagamento(){
-                metodoPagamento = $("#select_pag option:selected").text();
+                metodoPagamento = $('input[name="metodo-pagamento"]:checked').val();
                 return metodoPagamento;
               }
               
