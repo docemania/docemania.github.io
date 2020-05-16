@@ -205,7 +205,7 @@
        <script type="text/javascript">
               let quantidade=1;
               let metodoPagamento = "";
-              let linkWhatsApp = "www.oi.com";
+          
               function Somar(){
                 return quantidade++ ;
               }
@@ -218,7 +218,7 @@
 
            
               function linkWhats(){
-               metodoPagamento =  $('input[name="metodo-pagamento"]:checked').val();   
+               metodoPagamento = $('input[name="metodo-pagamento"]:checked').val();   
               window.location.href = "whatsapp://send/?phone=+5583999485703&text=Olá, gostaria de pedir " + quantidade+" brownie "+"no "+metodoPagamento;
               }
 
