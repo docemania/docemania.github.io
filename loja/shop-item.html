@@ -54,16 +54,14 @@
                           </div>                  
                       </div>   -->
           <h3>SELECIONE O MÉTODO DE PAGAMENTO</h3>
-          <div class="form_row">
-            <div class="selector_overlay">
-              <select id="select_pag" name="selectoptions" class="required">
-                <option value="" disabled selected>Método de pagamento</option>
-                <option value="1">Dinheiro</option>
-                <option value="2">Cartão de Débito</option>
-                <option value="3">Cartão de Crédito</option>       
-              </select>
-            </div>
-          </div>
+            <div class="size_selectors">                
+              <input id="dinheiro" type="radio" name="metodo-pagamento" value="dinheiro">  
+              <label for="dinheiro">Dinheiro</label>
+              <input id="cartao-debito" type="radio" name="metodo-pagamento" value="debito">
+              <label for="cartao-debito">Débito</label> 
+              <input id="cartao-credito" type="radio" name="metodo-pagamento" value="credito">     
+              <label for="cartao-credito">Crédito</label>                     
+            </div> 
        
 
           <a href="javascript:void(0)" onclick="linkWhats()" class="button_full btyellow">FINALIZAR COM WHATSAPP</a>
